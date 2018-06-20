@@ -19,4 +19,3 @@ App.get('*',(req,res,next)=>{
 });
 
 App.listen(3000,()=>console.log("El servidor esta arrancado puerto 3000"));
-
