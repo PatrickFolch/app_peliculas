@@ -6,6 +6,7 @@ from "./films/films-list/films-list.component";
 import {SeriesListComponent}
 from "./series/series-list/series-list.component";
 import{FilmsItemComponent} from "./films/films-item/films-item.component";
+import{SeriesItemComponent} from "./series/series-item/series-item.component";
 const home = angular
 .module('home',[])
 .service('FilmsService', FilmsService)
@@ -13,6 +14,7 @@ const home = angular
 .component ('filmsList', FilmsListComponent)
 .component ('seriesList', SeriesListComponent)
 .component ('filmsItem', FilmsItemComponent)
+.component ('seriesItem', SeriesItemComponent)
 .config(($stateProvider, $urlRouterProvider)=>{
     $stateProvider
         .state('films', {
