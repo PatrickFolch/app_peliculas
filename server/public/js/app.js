@@ -1,0 +1,1 @@
+console.error("Error: Cannot find module 'C:\\Users\\Trabajo\\dev\\app-peliculas\\app\\app.js' from 'C:\\Users\\Trabajo\\dev\\app-peliculas'");
