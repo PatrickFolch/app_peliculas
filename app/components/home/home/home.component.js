@@ -5,7 +5,7 @@ export const HomeComponent ={
         <div class="col home" >
             <h1>HOME</h1>
             
-            <h3><strong>No hay ninguna pelicula o serie solo imagens y su dexcipcion!!!!!</strong></h3>
+            <h3><strong>No hay ninguna pelicula o serie solo imagenes y su descripcion!!!!!</strong></h3>
 
             
             <p>Esta aplicacion recoge las peliculas y series mas vistas<br>

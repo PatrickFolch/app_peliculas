@@ -8,6 +8,7 @@ from "./series/series-list/series-list.component";
 import{FilmsItemComponent} from "./films/films-item/films-item.component";
 import{SeriesItemComponent} from "./series/series-item/series-item.component";
 import{HomeComponent} from "./home/home.component"
+import{Error404Component} from "./error404/error404.component"
 const home = angular
 .module('home',[])
 .service('FilmsService', FilmsService)
@@ -17,6 +18,7 @@ const home = angular
 .component ('seriesList', SeriesListComponent)
 .component ('filmsItem', FilmsItemComponent)
 .component ('seriesItem', SeriesItemComponent)
+.component('error404Component', Error404Component)
 .config(($stateProvider, $urlRouterProvider)=>{
     $stateProvider
         .state('home', {
@@ -30,8 +32,12 @@ const home = angular
         .state('series', {
             url: '/series',
             component: 'seriesList'
+        })
+        .state('error404', {
+            url: '/error404',
+            component: 'error404Component'
         });
-    $urlRouterProvider.otherwise('/')
+    $urlRouterProvider.otherwise('/error404')
     })
     .name
 export default home
